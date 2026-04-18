@@ -36,6 +36,11 @@ def create_app():
     return app
 
 
+# Module-level app instance — gunicorn looks for this when it starts.
+# create_app() is still the real setup function; this just calls it once.
+app = create_app()
+
+
 # Run the app when this file is executed directly (e.g. `python app.py`)
 if __name__ == '__main__':
     import os

@@ -1,0 +1,18 @@
+# requirements.txt
+# Lists all Python packages this project needs.
+# Install them by running:  pip install -r requirements.txt
+
+flask>=3.0.0
+
+# 'requests' is the standard library for making HTTP calls to external APIs.
+requests>=2.31.0
+
+# 'pymongo' is the official Python driver for MongoDB.
+pymongo>=4.6.0
+
+# 'python-dotenv' loads environment variables from a .env file automatically.
+python-dotenv>=1.0.0
+
+# 'gunicorn' is the production web server used when deploying to Railway.
+# (Never use Flask's built-in server in production.)
+gunicorn>=21.2.0
